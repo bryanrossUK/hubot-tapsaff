@@ -1,13 +1,12 @@
 # Description:
-#   hubot-tapsaff
-#
-# Configuration:
-#   HUBOT_TAPSAFF_TOON - optional default location for lookups
+#   Find out if its tapsaff weather in your location.
 #
 # Commands:
 #   tapsaff           - get the tapsaff status for the default location (HUBOT_TAPSAFF_TOON)
 #   tapsaff in <toon> - get the tapsaff status for the specified location
 #
+# Configuration:
+#   HUBOT_TAPSAFF_TOON - optional default location for lookups
 
 module.exports = (robot) ->
   robot.respond /tapsaff in (\w+)/i, (msg) ->
