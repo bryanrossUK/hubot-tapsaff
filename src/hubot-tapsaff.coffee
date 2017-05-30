@@ -9,7 +9,7 @@
 #   HUBOT_TAPSAFF_TOON - optional default location for lookups
 
 module.exports = (robot) ->
-  robot.respond /tapsaff in (\w+)/i, (msg) ->
+  robot.respond /tapsaff in (.+)$/i, (msg) ->
     toon = msg.match[1]
     robot.http("http://www.taps-aff.co.uk/?api&location=#{toon}")
       .get() (err, res, body) ->
